@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Fukuoka Map - EXAMPLE 1</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="../jquery.fukuoka-map.js"></script>
+  <script>
+    $(function(){
+      $("#map-container").fukuokaMap({
+        width: 600,
+        height: 720,
+        showsKuName: true,
+        onSelect : function(data){
+          alert(data.name);
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+<div id="map-container"></div>
+</body>
+</html>
